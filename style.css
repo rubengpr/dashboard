@@ -354,3 +354,269 @@
 
 
 
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Root variables */
+:root {
+    --main-clr: #2b80ff;
+    --boxshadow: 1px 2px 4px #c1c1c1;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+
+/* Sidebar elements */
+.sidebar {
+    background-color: var(--main-clr);
+    height: 100vh;
+}
+
+#dashboard-logo {
+    height: 30px;
+}
+
+.sidebar-header {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 15px;
+    font-size: 26px;
+    font-weight: 900;
+    color: white;
+}
+
+.sidebar-icon {
+    width: 20px;
+}
+
+.sidebar-items {
+    margin-top: 30px;
+}
+
+.sidebar-option {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.sidebar-text {
+    color: white;
+    margin: 10px 0px;
+}
+
+/* Content container */
+.content-container {
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+}
+
+
+/* Header container */
+.header-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: #ffffff;
+    padding: 10px 40px;
+    align-items: center;
+    height: 150px;
+    box-shadow: 0px 2px 5px var(--boxshadow-clr);
+    z-index: 1;
+}
+
+.dashboard-container {
+  display: grid;
+  grid-template-columns: 4fr 1fr;  
+  background-color: #dae6fb;
+}
+
+button {
+    background-color: var(--main-clr);
+    border-radius: 30px;
+    width: 90px;
+    height: 35px;
+    color: white;
+    border: none;
+    font-size: 12px;
+    font-weight: 900;
+    margin: 0px 10px;
+}
+
+.profile-picture {
+    width: 40px;
+    border-radius: 50%;
+}
+
+.search-bar {
+    background-color: rgb(228, 228, 228);
+    width: 670px;
+    height: 30px;
+    border-radius: 30px;
+
+}
+
+.header-grid-1 {
+  display: grid;
+  grid-template-columns: 1fr 19fr;
+  align-items: center;
+}
+
+.header-grid-2 {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 2fr;
+  align-items: center;
+}
+
+.header-grid-3 {
+  display: grid;
+  grid-template-columns: 1fr 9fr;
+  align-items: center;
+}
+
+.header-grid-4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+h2 {
+  margin: 5px 0px;
+}
+
+p {
+  margin: 5px 0px;
+}
+
+.user-name {
+  font-weight: 900;
+}
+
+.header-icon {
+  width: 25px;
+}
+
+.greet {
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.name-greet {
+  font-size: 20px;
+}
+
+.profile-picture-large {
+  width: 50px;
+  border-radius: 50%;
+}
+
+
+/* Projects grid */
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 40px repeat(3, 1fr);
+  margin: 20px 20px;
+}
+
+.project-title {
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.project-card {
+  display: grid;
+  grid-template-columns: 8px auto;
+}
+
+.card-content {
+  width: 390px;
+  height: 150px;
+  background-color: white;
+  border-radius: 0px 8px 8px 0px;
+  padding: 10px 20px;
+  box-shadow: var(--boxshadow)
+}
+
+.project-description {
+  font-size: 14px;
+  color: #696969;
+  padding-bottom: 30px;
+}
+
+.card-icon {
+  width: 25px;
+  padding-right: 20px;
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.announcements-box {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: white;
+  border-radius: 8px;
+  padding: 15px 20px;
+  box-shadow: var(--boxshadow)
+}
+
+.announcements-title {
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.announcements-description {
+  font-size: 10px;
+  color: #696969;
+}
+
+.moreinfo-grid {
+  margin-top: 20px;
+  margin-right: 30px;
+}
+
+.icon-box {
+  display: grid;
+  grid-template-columns: repeat(3, 50px);
+  justify-content: end;
+}
+
+.trending-username {
+  font-size: 12px;
+}
+
+.trending-title {
+  font-size: 12px;
+  color: #696969;
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+.trending-box {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  background-color: white;
+  border-radius: 8px;
+  padding: 15px 20px;
+  box-shadow: var(--boxshadow)
+}
+
+.color-line {
+  width: 390px;
+  height: 150px;
+  background-color: orange;
+  border-radius: 8px 0px 0px 8px;
+  padding: 10px 20px;
+  box-shadow: var(--boxshadow)
+}
